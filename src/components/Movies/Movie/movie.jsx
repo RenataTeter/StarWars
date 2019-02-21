@@ -1,5 +1,5 @@
 import React from 'react'
-import './movie.css'
+/* import './movie.css'  */
 import PropTypes from 'prop-types'
 
 class Movie extends React.Component {

@@ -1,13 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Sort = () => {
+const style = {
+  /* backgroundColor: 'black'
+   color: #fff,
+  margin:0 20px,
+  with: 40px,
+  padding: 20px,
+  cursor: 'pinter' */
+}
+
+export const Sort = (props) => {
   return (
     <div>
-      <button> Sort</button>
-      <button> Jakis text</button>
-      <button> Jakis text</button>
+      <button style={style} onClick={props.sort}>Correct viewing order</button>
+      <button style={style}>Sort alphabetically</button>
+      <button style={style}>year of the film's release</button>
     </div>
   )
 }
 
-export default Sort
+Sort.propTypes = {
+  sort: PropTypes.function
+}

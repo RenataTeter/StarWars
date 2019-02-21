@@ -1,7 +1,7 @@
 ![Star Wars](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1280px-Star_Wars_Logo.svg.png)
 
-# StarWars
-Homework Star Wars movies list. 
+# Star Wars
+Homework Star Wars movies list. It's possile to sort it year of the film's release, alphabet and the correct viewing order.
 
 #### Node installation on Windows
 
