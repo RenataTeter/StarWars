@@ -8,21 +8,6 @@ Homework Star Wars movies list. It's possile to sort it year of the film's relea
 Just go on [official Node.js website](http://nodejs.org/) & grab the installer.
 Also, be sure to have `git` available in your PATH, `npm` might need it.
 
----
-
-## Install
-
-    $ git clone https://github.com/ORG/PROJECT.git
-    $ cd PROJECT
-    $ npm install
-
-### Configure app
-
-Copy `config.sample.json` to `config.json` then edit it with the url where you have setup:
-
-- backend api
-- oauth like endpoint for auth
-- development
 
 ## Start & watch
 
@@ -31,12 +16,3 @@ Copy `config.sample.json` to `config.json` then edit it with the url where you h
 ## Simple build for production
 
     $ npm run build
-
-## Update sources
-
-Some packages usages might change so you should run `npm prune` & `npm install` often.
-A common way to update is by doing
-
-    $ git pull
-    $ npm prune
-    $ npm install
