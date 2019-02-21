@@ -9,33 +9,34 @@ class Movie extends React.Component {
       showDescription: false
     }
   }
-    showDescription = () => {
-      this.setState({ showDescription: !this.state.showDescription })
-    }
 
-    render () {
-      const { name, description, image } = this.props
-      return (
-        <li className='movie__wrapper'>
-          <div>
-            <a>
-              <img
-                src={image}
-                className='movie__image'
-                alt={name}
-              />
-              <h3 className='movie__title' onClick={this.showDescription}>
-                {name}
-              </h3>
-            </a>
+  showDescription () {
+    this.setState({ showDescription: !this.state.showDescription })
+  }
 
-            <p className='movie__description'>
-              {this.state.showDescription && description}
-            </p>
-          </div>
-        </li>
-      )
-    }
+  render () {
+    const { name, description, image } = this.props
+    return (
+      <li className='movie__wrapper'>
+        <div>
+          <a>
+            <img
+              src={image}
+              className='movie__image'
+              alt={name}
+            />
+            <h3 className='movie__title' onClick={this.showDescription}>
+              {name}
+            </h3>
+          </a>
+
+          <p className='movie__description'>
+            {this.state.showDescription && description}
+          </p>
+        </div>
+      </li>
+    )
+  }
 };
 
 Movie.propTypes = {
