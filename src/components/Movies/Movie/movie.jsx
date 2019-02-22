@@ -15,6 +15,7 @@ class Movie extends React.Component {
   }
 
   render () {
+    // eslint-disable-next-line standard/object-curly-even-spacing
     const { name, description, image } = this.props
     return (
       <li className='movie__wrapper'>

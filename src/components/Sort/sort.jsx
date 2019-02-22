@@ -13,13 +13,26 @@ const style = {
 export const Sort = (props) => {
   return (
     <div>
-      <button style={style} onClick={props.sort}>Correct viewing order</button>
-      <button style={style}>Sort alphabetically</button>
-      <button style={style}>year of the film's release</button>
+      <button style={style} onClick={props.sortAbc}>Sort alphabetically</button>
+      <button style={style} onClick={props.sortOrder}>Correct viewing order</button>
+      <button style={style} onClick={props.sortYear}>Year of the film's release</button>
+      <button style={style} onClick={props.sortYearMax}>Latest Movies</button>
     </div>
   )
 }
 
 Sort.propTypes = {
-  sort: PropTypes.function
+  sortAbc: PropTypes.func
+}
+
+Sort.propTypes = {
+  sortYear: PropTypes.func
+}
+
+Sort.propTypes = {
+  sortYearMax: PropTypes.func
+}
+
+Sort.propTypes = {
+  sortOrder: PropTypes.func
 }

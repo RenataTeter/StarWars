@@ -9,22 +9,42 @@ export class App extends React.Component {
     this.state = {
       listOfMovies: swMovies
     }
+    this.sortAbc = this.sortAbc.bind(this)
+    this.sortYear = this.sortYear.bind(this)
+    this.sortOrder = this.sortOrder.bind(this)
+    this.sortYearMax = this.sortYearMax.bind(this)
   }
 
-  sort () {
+  sortAbc () {
     this.setState({
-      listOfMovies: this.state.listOfMovies.sort(
+      listOfMovies: this.state.listOfMovies.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
+    })
+  }
 
-      )
+  sortYear () {
+    this.setState({
+      listOfMovies: this.state.listOfMovies.sort((a, b) => a.year - b.year)
+    })
+  }
+
+  sortYearMax () {
+    this.setState({
+      listOfMovies: this.state.listOfMovies.sort((a, b) => b.year - a.year)
+    })
+  }
+
+  sortOrder () {
+    this.setState({
+      listOfMovies: this.state.listOfMovies.sort((a, b) => a.id - b.id)
     })
   }
 
   render () {
     return (
       <div>
-        <Sort sort={this.sort} />
+        <Sort sortAbc={this.sortAbc} sortYear={this.sortYear} sortOrder={this.sortOrder} sortYearMax={this.sortYearMax} />
         <Movies swMovies={this.state.listOfMovies} />
       </div>
     )
   }
-};
+}
