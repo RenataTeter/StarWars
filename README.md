@@ -1,7 +1,7 @@
 ![Star Wars](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1280px-Star_Wars_Logo.svg.png)
 
 # Star Wars
-Homework Star Wars movies list. It's possible to sort it year of the film's release, alphabet and the correct viewing order.
+Homework Star Wars movies list. It's possible to sort it year by of the film's release, alphabet and the correct viewing order.
 
 #### Node installation on Windows
 
@@ -17,3 +17,8 @@ Also, be sure to have `git` available in your PATH, `npm` might need it.
 ## Simple build for production
 
     $ npm run build
+
+## In prosjecyt installed
+
+JSON server from https://github.com/typicode/json-server
+

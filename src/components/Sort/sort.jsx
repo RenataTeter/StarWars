@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const style = {
-  /* backgroundColor: 'black'
-   color: #fff,
-  margin:0 20px,
-  with: 40px,
-  padding: 20px,
-  cursor: 'pinter' */
+  backgroundColor: 'black',
+  color: `#fff`,
+  margin: `0 20px`,
+  with: `40px`,
+  padding: `20px`,
+  cursor: 'pointer'
 }
 
 export const Sort = (props) => {
@@ -15,8 +15,9 @@ export const Sort = (props) => {
     <div>
       <button style={style} onClick={props.sortAbc}>Sort alphabetically</button>
       <button style={style} onClick={props.sortOrder}>Correct viewing order</button>
-      <button style={style} onClick={props.sortYear}>Year of the film's release</button>
-      <button style={style} onClick={props.sortYearMax}>Latest Movies</button>
+      <button style={style} onClick={props.sortYear}>The newest movie</button>
+      <button style={style} onClick={props.sortYearMax}>The atest Movies</button>
+
     </div>
   )
 }
