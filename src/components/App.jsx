@@ -52,10 +52,8 @@ export class App extends React.Component {
   }
 
   componentDidMount () {
-    // eslint-disable-next-line no-undef
     fetch('http://localhost:3002/data')
       .then(response => response.json())
-      // eslint-disable-next-line standard/object-curly-even-spacing
       .then(data => this.setState({ listOfMovies: data }))
   }
 

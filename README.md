@@ -22,5 +22,19 @@ Also, be sure to have `git` available in your PATH, `npm` might need it.
 
 JSON server from https://github.com/typicode/json-server
 
+Install JSON Server
 
+npm install -g json-server
 
+Data you can find in db.json file.
+
+Start JSON Server
+
+json-server --watch db.json --port 3002
+
+## ESLint tool to making code more consistent and avoiding bugs.
+
+Local Installation 
+If you want to include ESLint as part of your project’s build system install ESLint
+
+$ npm install eslint --save-dev
