@@ -24,7 +24,7 @@ export const Sort = (props) => {
       <button style={styleButton} onClick={props.sortAbc}>Sort alphabetically</button>
       <button style={styleButton} onClick={props.sortOrder}>Correct viewing order</button>
       <button style={styleButton} onClick={props.sortYear}>The newest movie</button>
-      <button style={styleButton} onClick={props.sortYearMax}>The atest Movies</button>
+      <button style={styleButton} onClick={props.sortYearMax}>The oldest movies</button>
 
     </div>
   )

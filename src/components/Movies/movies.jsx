@@ -3,9 +3,11 @@ import Movie from './Movie/movie'
 import PropTypes from 'prop-types'
 
 const styleUl = {
-  width: `80vw`,
+  width: `60vw`,
   margin: `50px auto 0`,
-  textAlign: `center`
+  textAlign: `center`,
+  backgroundColor: `rgba(0, 0, 0, 0.8)`,
+  padding: `30px 0px`
 }
 
 const Movies = (props) => (

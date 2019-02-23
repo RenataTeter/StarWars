@@ -16,11 +16,12 @@ const styles = {
   },
   title: {
     cursor: 'pointer',
-    color: `#333`,
+    color: `#eee`,
     fontWeight: `bold`
   },
   description: {
-    color: `#333`
+    color: `#eee`,
+    padding: `0 30px`
   }
 }
 
@@ -45,6 +46,7 @@ class Movie extends React.Component {
           <a>
             <img
               style={styles.img}
+              onClick={this.showDescription}
               src={image}
               alt={name}
             />
