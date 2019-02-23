@@ -5,8 +5,7 @@ import PropTypes from 'prop-types'
 const styles = {
   container: {
     listStyle: `none`,
-    padding: 0,
-    margin: `0 0 50px`
+    padding: 0
   },
   img: {
     cursor: 'pointer',
@@ -21,7 +20,9 @@ const styles = {
   },
   description: {
     color: `#eee`,
-    padding: `0 30px`
+    padding: `0 30px 30px `,
+    textAlign: `justify`,
+    marginBottom: `20px`
   }
 }
 
