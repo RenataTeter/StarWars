@@ -6,13 +6,13 @@
   "name": "Episode IV – A New Hope",
   "description": "The OG, the one that started it all, the game-changer in the world of sci-fi and cinematic history – the one that every movie before was simply leading up to. Director George Lucas used ground-breaking yet simple top-motion special effects to bring an entire galaxy to life. In one movie rife with aliens, robots, and spaceships, words like Wookiee, Jedi, and lightsaber became household names, and theStar Wars universe took the world by storm. The timeline follows exactly where Rogue One left off, but in some ways this is really where Star Wars begins."
 
-},
-{
+}
+/* {
   "id": 2,
   "image": "https://images-na.ssl-images-amazon.com/images/I/51PPHWJ4TRL._SY445_.jpg",
   "year": 1980,
   "name": "Episode V – The Empire Strikes Back",
-  "description": "Often considered the best of the franchise, The Empire Strikes Back takes a darker
+  "description": " Often considered the best of the franchise, The Empire Strikes Back takes a darker
   and more brooding approach to the usual space-romance seen before. We see the live mummification of
   a fan-favourite, and the first example of Master Yoda since the end of Episode III – not to mention
   some of the most quoted lines in cinema history, including Yoda’s 'Do or do not – there is no ‘try’'
@@ -35,8 +35,8 @@
    with that one annoying friend who hasn’t seen it before, do you really want them sat there the
     entire time asking annoying questions like ‘Who is he? Why’s he got a red one? Why can he speak
      to robots?/’
-      A Phantom Menace is the perfect place to start: it’s got the absolute genius of Darth Maul, 
-      the introduction of some of the most iconic characters in movie history, and ahem, Jar-Jar Binks. 
+      A Phantom Menace is the perfect place to start: it’s got the absolute genius of Darth Maul,
+      the introduction of some of the most iconic characters in movie history, and ahem, Jar-Jar Binks.
       This way, at least, you get him out of the way sooner."
 },
 {
@@ -44,8 +44,13 @@
   "image": "https://images-na.ssl-images-amazon.com/images/I/51TERNCS5RL._SY445_.jpg",
   "year": "2002",
   "name": "Episode II – Attack of the Clones",
-  "description": "Often underrated when discussed among fans, Attack of the Clones is one of the most important instalments of the franchise. Set 10 years after Episode I, we see a few things explained that wouldn’t make sense if watched in a different order – not to mention one of the best fighting scenes in Star Wars history. It’s also the first time in the chronology that Obi-Wan says the famous “may the force be with you” phrase – after being misquoted since 1977‘s A New Hope.
-      It may also be worth noting that Episode II sets up the animated movie The Clone Wars, and a six-season animated TV series also under the same title – all of which lead to the events of…"
+  "description": "Often underrated when discussed among fans, Attack of the Clones is one of the most 
+  important instalments of the franchise. Set 10 years after Episode I, we see a few things explained 
+  that wouldn’t make sense if watched in a different order – not to mention one of the best fighting 
+  scenes in Star Wars history. It’s also the first time in the chronology that Obi-Wan says the famous 
+  “may the force be with you” phrase – after being misquoted since 1977‘s A New Hope.
+      It may also be worth noting that Episode II sets up the animated movie The Clone Wars, and a 
+      six-season animated TV series also under the same title – all of which lead to the events of…"
 },
 {
   "id": "6",
@@ -75,7 +80,7 @@
   "name": "Episode VIII – The Last Jedi",
   "description": "After 10 movies and over four decades, we are finally at the end of our list, 
   and up to date in the Star Wars universe timeline. The Last Jedi was met with mixed reviews, 
-  after many argued it didn\’t feel like a traditional Star Wars movie. Others claimed it was best 
+  after many argued it didn’t feel like a traditional Star Wars movie. Others claimed it was best 
   since The Empire Strikes Back. Throughout the film we see an aged Luke and Leia Skywalker return, 
   leading a battle against the villainous Kylo Ren. Notably, there are also cute new creatures, Porgs, 
   and a welcomed cameo from a certain mischievous mentor.
@@ -88,5 +93,5 @@
   "name": "Solo – A Star Wars Story",
   "description": "Due for a May 25 release date (41 years exactly since the release of the original, Episode IV), Solo is the first chronological introduction we get into one of the series’ main protagonists – Han Solo. Originally played by the great Harrison Ford, now Alden Ehrenreich takes the reins alongside Woody Harrison and Donald Glover. This film is set 10 years before A New Hope; optional viewing after this one is another animated TV show called Rebels, which consists of four seasons and is set five years before A New Hope (and, coincidentally, our next film…)"
 }
-
+ */
 ]}

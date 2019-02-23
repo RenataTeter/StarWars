@@ -2,6 +2,26 @@ import React from 'react'
 /* import './movie.css'  */
 import PropTypes from 'prop-types'
 
+const styles = {
+  container: {
+    listStyle: `none`,
+    padding: 0,
+    margin: `0 0 50px`
+  },
+  img: {
+    width: `auto`,
+    height: `300px`,
+    borderRadius: `2%`
+  },
+  title: {
+    color: `#333`,
+    fontWeight: `bold`
+  }
+  description:{
+    color: `#333`,
+  }
+}
+
 class Movie extends React.Component {
   constructor () {
     super()
@@ -18,20 +38,21 @@ class Movie extends React.Component {
     // eslint-disable-next-line standard/object-curly-even-spacing
     const { name, description, image } = this.props
     return (
-      <li className='movie__wrapper'>
+      <li style={styles.container}>
         <div>
           <a>
             <img
+              style={styles.img}
               src={image}
               className='movie__image'
               alt={name}
             />
-            <h3 className='movie__title' onClick={this.showDescription}>
+            <h3 style={styles.title} onClick={this.showDescription}>
               {name}
             </h3>
           </a>
 
-          <p className='movie__description'>
+          <p style={styles.description}>
             {this.state.showDescription && description}
           </p>
         </div>

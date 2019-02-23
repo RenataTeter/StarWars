@@ -3,6 +3,19 @@ import Movies from './Movies/movies'
 import { Sort } from './Sort'
 import { swMovies } from '../data/swMovies'
 
+const styles = {
+  container: {
+    margin: 0,
+    padding: 0,
+    display: `flex`,
+    flexDirection: `column`,
+    alignItems: `center`
+  },
+  logo: {
+    marginTop: `30px`,
+    marginBottom: `30px`
+  }
+}
 export class App extends React.Component {
   constructor () {
     super()
@@ -48,8 +61,8 @@ export class App extends React.Component {
 
   render () {
     return (
-      <div>
-        <img src='https://pixel.nymag.com/imgs/daily/vulture/2016/12/18/18-Star-Wars-Logo.w710.h473.2x.jpg' />
+      <div style={styles.container}>
+        <img style={styles.logo} src='https://pixel.nymag.com/imgs/daily/vulture/2016/12/18/18-Star-Wars-Logo.w710.h473.2x.jpg' />
         <Sort sortAbc={this.sortAbc} sortYear={this.sortYear} sortOrder={this.sortOrder} sortYearMax={this.sortYearMax} />
         <Movies swMovies={this.state.listOfMovies} />
       </div>

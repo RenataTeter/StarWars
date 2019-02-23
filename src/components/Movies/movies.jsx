@@ -2,8 +2,14 @@ import React from 'react'
 import Movie from './Movie/movie'
 import PropTypes from 'prop-types'
 
+const styleUl = {
+  width: `80vw`,
+  margin: `100px auto 0`,
+  textAlign: `center`
+}
+
 const Movies = (props) => (
-  <ul className='movies__wrapper'>
+  <ul style={styleUl}>
     {props.swMovies.map(item => (
       <Movie key={item.name} {...item} />
     ))}
