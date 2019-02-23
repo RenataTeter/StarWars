@@ -1,22 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const style = {
-  /* backgroundColor: 'black'
-   color: #fff,
-  margin:0 20px,
-  with: 40px,
-  padding: 20px,
-  cursor: 'pinter' */
+const styleButton = {
+  flex: `1 1 auto`,
+  backgroundImage: 'linear-gradient(to top, #000, #777 51%, #000 100%)',
+  color: `#f7ed40`,
+  textTransform: `uppercase`,
+  margin: `10px`,
+  with: `40px`,
+  padding: `20px`,
+  borderRadius: 10,
+  cursor: 'pointer',
+  transition: 'all 0.30s ease-in-out',
+  ':hover': {
+    color: `red`,
+    backgroundImage: 'linear-gradient(to top, #000 0%, #aaa 50%, #000 100%)'
+  }
 }
 
 export const Sort = (props) => {
   return (
     <div>
-      <button style={style} onClick={props.sortAbc}>Sort alphabetically</button>
-      <button style={style} onClick={props.sortOrder}>Correct viewing order</button>
-      <button style={style} onClick={props.sortYear}>Year of the film's release</button>
-      <button style={style} onClick={props.sortYearMax}>Latest Movies</button>
+      <button style={styleButton} onClick={props.sortAbc}>Sort alphabetically</button>
+      <button style={styleButton} onClick={props.sortOrder}>Correct viewing order</button>
+      <button style={styleButton} onClick={props.sortYear}>The newest movie</button>
+      <button style={styleButton} onClick={props.sortYearMax}>The atest Movies</button>
+
     </div>
   )
 }
