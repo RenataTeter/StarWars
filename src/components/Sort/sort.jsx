@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const styleButton = {
   flex: `1 1 auto`,
-  backgroundImage: 'linear-gradient(to top, #000, #cccccc 51%, #000 100%)',
+  backgroundImage: 'linear-gradient(to top, #000, #777 51%, #000 100%)',
   color: `#f7ed40`,
   textTransform: `uppercase`,
   margin: `10px`,
@@ -12,9 +12,9 @@ const styleButton = {
   borderRadius: 10,
   cursor: 'pointer',
   transition: 'all 0.30s ease-in-out',
-  ':focus': {
+  ':hover': {
     color: `red`,
-    backgroundImage: 'linear-gradient(to top, #000 0%, #777 50%, #000 100%)'
+    backgroundImage: 'linear-gradient(to top, #000 0%, #aaa 50%, #000 100%)'
   }
 }
 

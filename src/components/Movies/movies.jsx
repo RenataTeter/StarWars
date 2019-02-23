@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const styleUl = {
   width: `80vw`,
-  margin: `100px auto 0`,
+  margin: `50px auto 0`,
   textAlign: `center`
 }
 

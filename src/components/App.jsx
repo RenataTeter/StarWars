@@ -1,7 +1,6 @@
 import React from 'react'
 import Movies from './Movies/movies'
 import { Sort } from './Sort'
-import { swMovies } from '../data/swMovies'
 
 const styles = {
   container: {
@@ -20,7 +19,7 @@ export class App extends React.Component {
   constructor () {
     super()
     this.state = {
-      listOfMovies: swMovies
+      listOfMovies: []
     }
     this.sortAbc = this.sortAbc.bind(this)
     this.sortOrder = this.sortOrder.bind(this)
@@ -30,7 +29,7 @@ export class App extends React.Component {
 
   sortAbc () {
     this.setState({
-      listOfMovies: this.state.listOfMovies.sort((a, b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))
+      listOfMovies: this.state.listOfMovies.sort((a, b) => (a.name > b.name) ? true : ((b.name > a.name)))
     })
   }
 
@@ -55,8 +54,9 @@ export class App extends React.Component {
   componentDidMount () {
     // eslint-disable-next-line no-undef
     fetch('http://localhost:3002/data')
-      .then(response => response.json)
-      .then(response => console.log(response))
+      .then(response => response.json())
+      // eslint-disable-next-line standard/object-curly-even-spacing
+      .then(data => this.setState({ listOfMovies: data }))
   }
 
   render () {

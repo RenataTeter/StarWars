@@ -9,16 +9,18 @@ const styles = {
     margin: `0 0 50px`
   },
   img: {
+    cursor: 'pointer',
     width: `auto`,
     height: `300px`,
     borderRadius: `2%`
   },
   title: {
+    cursor: 'pointer',
     color: `#333`,
     fontWeight: `bold`
-  }
-  description:{
-    color: `#333`,
+  },
+  description: {
+    color: `#333`
   }
 }
 
@@ -28,6 +30,7 @@ class Movie extends React.Component {
     this.state = {
       showDescription: false
     }
+    this.showDescription = this.showDescription.bind(this)
   }
 
   showDescription () {
@@ -35,7 +38,6 @@ class Movie extends React.Component {
   }
 
   render () {
-    // eslint-disable-next-line standard/object-curly-even-spacing
     const { name, description, image } = this.props
     return (
       <li style={styles.container}>
@@ -44,7 +46,6 @@ class Movie extends React.Component {
             <img
               style={styles.img}
               src={image}
-              className='movie__image'
               alt={name}
             />
             <h3 style={styles.title} onClick={this.showDescription}>

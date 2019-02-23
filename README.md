@@ -18,7 +18,9 @@ Also, be sure to have `git` available in your PATH, `npm` might need it.
 
     $ npm run build
 
-## In prosjecyt installed
+## For the data you need to install JSON server
 
 JSON server from https://github.com/typicode/json-server
+
+
 
