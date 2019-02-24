@@ -2,70 +2,72 @@ import { sortAbc } from './sortAbc'
 
 const swMovies = [
   {
-    name: 'Episode IV – A New Hope',
+    name: 'Episode IV – A New Hope'
   },
   {
-    name: 'Episode V – The Empire Strikes Back',
+    name: 'Episode V – The Empire Strikes Back'
   },
   {
-    name: 'Episode VI – The Return of the Jedi',
+    name: 'Episode VI – The Return of the Jedi'
   },
   {
-    name: 'Episode I – A Phantom Menace',
+    name: 'Episode I – A Phantom Menace'
   },
   {
-    name: 'Episode II – Attack of the Clones',
+    name: 'Episode II – Attack of the Clones'
   },
   {
-    name: 'Episode III – Revenge of the Sith',
+    name: 'Episode III – Revenge of the Sith'
   },
   {
-    name: 'Episode VII – The Force Awakens',
+    name: 'Episode VII – The Force Awakens'
   },
   {
-    name: 'Rogue One – A Star Wars Story',
+    name: 'Rogue One – A Star Wars Story'
   },
   {
-    name: 'Episode VIII – The Last Jedi',
+    name: 'Episode VIII – The Last Jedi'
   },
   {
-    name: 'Solo – A Star Wars Story',
+    name: 'Solo – A Star Wars Story'
   }
-
 ]
 
 const toMovies = [
-
   {
-    name: 'Episode I – A Phantom Menace',
+    name: 'Episode I – A Phantom Menace'
   },
   {
-    name: 'Episode II – Attack of the Clones',
+    name: 'Episode II – Attack of the Clones'
   },
   {
-    name: 'Episode III – Revenge of the Sith',
+    name: 'Episode III – Revenge of the Sith'
   },
   {
-    name: 'Episode IV – A New Hope',
+    name: 'Episode IV – A New Hope'
   },
   {
-    name: 'Episode V – The Empire Strikes Back',
+    name: 'Episode V – The Empire Strikes Back'
   },
   {
-    name: 'Episode VI – The Return of the Jedi',
+    name: 'Episode VI – The Return of the Jedi'
   },
   {
-    name: 'Episode VII – The Force Awakens',
+    name: 'Episode VII – The Force Awakens'
   },
   {
-    name: 'Rogue One – A Star Wars Story',
+    name: 'Episode VIII – The Last Jedi'
   },
   {
-    name: 'Solo – A Star Wars Story',
+    name: 'Rogue One – A Star Wars Story'
+  },
+  {
+    name: 'Solo – A Star Wars Story'
   }
-
 ]
 
+// eslint-disable-next-line no-undef
 test('Sort from yangest to oldest', () => {
-  expect(sortAbc(swMovies)).toEqual([toMovies])
+  // eslint-disable-next-line no-undef
+  expect(sortAbc(swMovies)).toEqual((toMovies))
 })

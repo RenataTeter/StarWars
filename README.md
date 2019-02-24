@@ -38,3 +38,10 @@ Local Installation
 If you want to include ESLint as part of your project’s build system install ESLint
 
 $ npm install eslint --save-dev
+
+## Install Jest to do test
+
+npm install --save-dev jest
+
+npm run test
+
