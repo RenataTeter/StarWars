@@ -6,7 +6,7 @@ const styleUl = {
   width: `60vw`,
   textAlign: `center`,
   backgroundColor: `rgba(0, 0, 0, 0.8)`,
-  padding: `30px 0px`
+  padding: `30px 0px 0px`
 }
 
 const Movies = (props) => (

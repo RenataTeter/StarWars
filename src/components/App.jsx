@@ -1,6 +1,7 @@
 import React from 'react'
 import Movies from './Movies/movies'
 import { Sort } from './Sort'
+import { sortAbc } from '../helpers'
 
 const styles = {
   container: {
@@ -32,7 +33,7 @@ export class App extends React.Component {
 
   sortAbc () {
     this.setState({
-      listOfMovies: this.state.listOfMovies.sort((a, b) => (a.name > b.name) ? true : ((b.name > a.name)))
+      listOfMovies: sortAbc(this.state.listOfMovies)
     })
   }
 

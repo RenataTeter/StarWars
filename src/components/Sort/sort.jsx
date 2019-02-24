@@ -7,14 +7,10 @@ const styleButton = {
   color: `#f7ed40`,
   textTransform: `uppercase`,
   margin: `10px`,
-  with: `40px`,
   padding: `20px`,
   borderRadius: 10,
   cursor: 'pointer',
-  transition: 'all 0.30s ease-in-out',
   ':hover': {
-    color: `red`,
-    backgroundImage: 'linear-gradient(to top, #000 0%, #aaa 50%, #000 100%)'
   }
 }
 
@@ -24,7 +20,7 @@ export const Sort = (props) => {
       <button style={styleButton} onClick={props.sortAbc}>Sort alphabetically</button>
       <button style={styleButton} onClick={props.sortOrder}>Correct viewing order</button>
       <button style={styleButton} onClick={props.sortYear}>The newest movie</button>
-      <button style={styleButton} onClick={props.sortYearMax}>The oldest movies</button>
+      <button style={styleButton} onClick={props.sortYearMax}>The oldest movie</button>
 
     </div>
   )

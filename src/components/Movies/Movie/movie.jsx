@@ -20,7 +20,7 @@ const styles = {
   },
   description: {
     color: `#eee`,
-    padding: `0 30px 30px `,
+    padding: `0 50px 20px `,
     textAlign: `justify`,
     marginBottom: `20px`
   }
